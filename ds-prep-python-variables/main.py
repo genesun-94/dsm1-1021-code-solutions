@@ -29,8 +29,8 @@ tall_threshold_in_meters = 1.860
 
 is_mean_height = height_in_meters == mean_height_in_meters
 is_short = height_in_meters < short_threshold_in_meters
-is_tall = height_in_meters > tall_threshold_in_meters
-is_normal_height = tall_threshold_in_meters >=height_in_meters >= short_threshold_in_meters
+is_tall = height_in_meters >= tall_threshold_in_meters
+is_normal_height = tall_threshold_in_meters > height_in_meters >= short_threshold_in_meters
 print("is_mean_height:", is_mean_height , "is_short:", is_short , "is_tall:", is_tall , "is_normal_height:", is_normal_height)
 
 
